@@ -1,10 +1,8 @@
-const DOMPARSER = new DOMParser().parseFromString.bind(new DOMParser())
-
+// If you need CORS
 const cors = 'https://cors-anywhere.herokuapp.com/'
 // const cors = 'http://crossorigin.me/'
 
-const baseURL = 'http://mantis.starlinetecnologia.com.br/issues_rss.php?username=unifoa.pedro&key=IFVNAsk03YU3kRf7wbh6ts6ZMGggWVRUzPIQfjRk3iHq3LrkeVcU9l0Ck_7QeQo2AOutUdVPoHqTB9x5XXYO'
-
+const baseURL = 'PUT_URL_HERE'
 
 fetch(cors + baseURL)
     .then(response => response.text())
@@ -23,6 +21,8 @@ fetch(cors + baseURL)
             var data = item.querySelector("pubDate").innerHTML
             var categoria = item.querySelector("category").innerHTML
             
+            // Simple example code, the exibition on Index can be changed.
+            
             html += `
                 <ul>
                     <li>${chamado}</li>
@@ -35,10 +35,3 @@ fetch(cors + baseURL)
         })
         document.body.insertAdjacentHTML("beforeend", html)
     })
-
-    // < article >
-    // <h1>${titulo}</h1> <br>
-    //     <h1>${descricao}</h1>
-    //     <h1>${data}</h1><br>
-    //         <h1>${categoria}</h1><br>
-    //         </article>
