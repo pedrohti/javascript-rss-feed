@@ -4,11 +4,23 @@
 	<meta charset="UTF-8">
 	<title>RSS Feed</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>    
     <script src='rss.js' defer></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 </head>
 <body>
-	<div>
+	<div class="container">
         <h1>Lista de Chamados:</h1>
+        <table id="tblChamados" class="display" width="100%"></table>
+
+        <h2>Já resolvidos</h2>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
 </body>
 </html>
