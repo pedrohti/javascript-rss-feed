@@ -2,7 +2,7 @@
 const cors = 'https://cors-anywhere.herokuapp.com/'
 // const cors = 'http://crossorigin.me/'
 
-const baseURL = 'http://mantis.starlinetecnologia.com.br/issues_rss.php?username=unifoa.pedro&key=IFVNAsk03YU3kRf7wbh6ts6ZMGggWVRUzPIQfjRk3iHq3LrkeVcU9l0Ck_7QeQo2AOutUdVPoHqTB9x5XXYO'
+const baseURL = 'URL_HERE'
 
 
 fetch(cors + baseURL)
