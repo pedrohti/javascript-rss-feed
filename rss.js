@@ -39,6 +39,7 @@ fetch(cors + baseURL)
 
         $('#tblChamados').DataTable({
             data: array,
+            order: [[2, 'desc']],
             columns: [
               { title: 'Chamado' },
               { title: 'Descrição' },
